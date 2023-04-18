@@ -1,0 +1,26 @@
+body{
+   background-image: url("https://cdn.ttgtmedia.com/rms/onlineimages/keys_a280346470.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
+}
+.main{
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    margin-left: 10%;
+    margin-top: 7%;
+    border-radius: 20px;
+    background: linear-gradient(to right, #005aa7, #fffde4);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    text-align: center;
+}
+.heading{
+    color: white;
+    padding-top: 15px;
+}
+#inputtxt{
+    height: 30px;
+    width: 300px;
+}
