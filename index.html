@@ -29,11 +29,18 @@
       </div>
 
       <div class="row">
-        <label for="specialchar">Include special characters</label>
+        <label for="specialchar">Include special characters (@-*)</label>
+        <input type="checkbox" name="lowercase" id="specialchar">
+      </div>
+
+      <div class="row">
+        <label for="numbers">Include numbers (0-9)</label>
         <input type="checkbox" name="lowercase" id="specialchar">
       </div>
       
-       
+      <button type="button" class="genBtn" id="genBtn">Generate Password</button> 
+
+
     </div>
     <script src="script.js"></script>
 </body>
