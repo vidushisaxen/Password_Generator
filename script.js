@@ -6,6 +6,7 @@
  let specialchar = document.getElementById("specialchar");
  let numbers = document.getElementById("numbers");
  let genBtn = document.getElementById("genBtn");
+ let copyIcon = document.getElementById("copyIcon");
 
 
  sliderValue.textContent = inputSlider.value;
@@ -34,8 +35,21 @@ passBox.value=generatePassword();
 
     let i=1;
     while(i<=inputSlider.value){
-        genpassword = allChars.charAt(Math.floor(Math.random()*allChars.length));
+        genpassword += allChars.charAt(Math.floor(Math.random()*allChars.length));
         i++;
     }
     return genpassword;
  }
+
+ copyIcon.addEventListener('click',()=>{ 
+    if(passBox.value != "" || passBox.value.length >= 1){
+        navigator.clipboard.writeText(passBox.value);
+        copyIcon.innerText = "check";
+        copyIcon.title = "Password copied";
+
+        setTimeout(()=>{
+          copyIcon.innerText = "content_copy";
+          copyIcon.title = "";
+        },3000)
+    }
+ });
