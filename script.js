@@ -50,6 +50,6 @@ passBox.value=generatePassword();
         setTimeout(()=>{
           copyIcon.innerText = "content_copy";
           copyIcon.title = "";
-        },3000)
+        },2000)
     }
  });
